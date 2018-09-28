@@ -25,3 +25,9 @@ allprojects {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+
+ext {
+    xposed_version = "53"
+    xposed = "de.robv.android.xposed:api:${xposed_version}"
+    xposed_sources = "de.robv.android.xposed:api:${xposed_version}:sources"
+}

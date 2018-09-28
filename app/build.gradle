@@ -20,4 +20,6 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
+    compileOnly rootProject.ext.xposed
+    compileOnly rootProject.ext.xposed_sources
 }
